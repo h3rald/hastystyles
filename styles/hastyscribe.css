@@ -2597,7 +2597,7 @@ pre {
   color: #333;
   background-color: #f8f8f8;
   border: 1px solid #ccc;
-  white-space: pre;
+  white-space: pre-wrap;
   margin: auto;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   padding: 0;
@@ -3197,7 +3197,7 @@ a[href="#document-top"]:before {
   color: #eee;
   background-color: #222;
   border: 1px solid #ccc;
-  white-space: pre;
+  white-space: pre-wrap;
   padding: 0 3px;
   border: 2px solid #999;
   border-top: 10px solid #999;
@@ -3250,7 +3250,7 @@ a[href="#document-top"]:before {
   color: #eee;
   background-color: #222;
   border: 1px solid #ccc;
-  white-space: pre;
+  white-space: pre-wrap;
   padding: 0 3px;
   border: 2px solid #999;
   border-top: 10px solid #999;
