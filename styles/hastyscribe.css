@@ -3228,8 +3228,8 @@ a[href="#document-top"]:before {
   font-size: 85%;
   color: #eee;
 }
-.terminal p :first-child,
-.terminal p:first-child :first-child {
+.terminal p:first-child,
+.terminal p:first-child:first-child {
   margin-top: 0px;
 }
 .terminal p:before,
@@ -3285,8 +3285,8 @@ a[href="#document-top"]:before {
   font-size: 85%;
   color: #eee;
 }
-.terminal-su p :first-child,
-.terminal-su p:first-child :first-child {
+.terminal-su p:first-child,
+.terminal-su p:first-child:first-child {
   margin-top: 0px;
 }
 .terminal-su p:before,
