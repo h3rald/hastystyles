@@ -3197,7 +3197,6 @@ a[href="#document-top"]:before {
   color: #eee;
   background-color: #222;
   border: 1px solid #ccc;
-  white-space: pre-wrap;
   padding: 0 3px;
   border: 2px solid #999;
   border-top: 10px solid #999;
@@ -3250,7 +3249,6 @@ a[href="#document-top"]:before {
   color: #eee;
   background-color: #222;
   border: 1px solid #ccc;
-  white-space: pre-wrap;
   padding: 0 3px;
   border: 2px solid #999;
   border-top: 10px solid #999;
