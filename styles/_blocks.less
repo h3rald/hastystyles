@@ -10,15 +10,19 @@
   .mix-responsive;
   padding: 0 3px;
   border: 2px solid @gray-9;
+  white-space: pre-wrap;
   border-top: 10px solid @gray-9;
   p, p:first-child {
-    margin-top: 0;
+    margin-top: -40px;
     margin-bottom: 0;
     text-shadow: none;
     font-weight: normal;
     font-family: @monospace-font;
     font-size: 85%;
     color: @gray-e;
+    :first-child {
+      margin-top: 0px;
+    }
     &:before {
       font-family: @monospace-font;
       font-style: normal;
