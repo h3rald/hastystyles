@@ -3255,7 +3255,9 @@ hr {
   text-align: center;
 }
 /* Inline */
-[class^="fa-"],
+[class^="fa-"] {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+}
 [class^="fas-"] {
   font-family: "Font Awesome 5 Free";
 }
