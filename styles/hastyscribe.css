@@ -3613,7 +3613,7 @@ a[href="#document-top"]:before {
   color: #264c72;
 }
 .note p:first-child:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -3653,7 +3653,7 @@ a[href="#document-top"]:before {
   color: #009926;
 }
 .tip p:first-child:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -3693,7 +3693,7 @@ a[href="#document-top"]:before {
   color: #705400;
 }
 .warning p:first-child:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -3733,7 +3733,7 @@ a[href="#document-top"]:before {
   color: #555;
 }
 .sidebar p:first-child:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4111,7 +4111,7 @@ div .terminal {
   content: "comment";
 }
 .red-circle:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4119,7 +4119,7 @@ div .terminal {
   content: "\f111" " ";
 }
 .green-circle:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4127,7 +4127,7 @@ div .terminal {
   content: "\f111" " ";
 }
 .yellow-circle:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4135,7 +4135,7 @@ div .terminal {
   content: "\f111" " ";
 }
 .gray-circle:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4143,7 +4143,7 @@ div .terminal {
   content: "\f111" " ";
 }
 .star:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4151,7 +4151,7 @@ div .terminal {
   content: "\f005" " ";
 }
 .heart:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4159,7 +4159,7 @@ div .terminal {
   content: "\f004" " ";
 }
 .square:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4167,7 +4167,7 @@ div .terminal {
   content: "\f0c8" " ";
 }
 .check:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4175,7 +4175,7 @@ div .terminal {
   content: "\f14a" " ";
 }
 .lock:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4183,7 +4183,7 @@ div .terminal {
   content: "\f023" " ";
 }
 .unlock:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4191,7 +4191,7 @@ div .terminal {
   content: "\f09c" " ";
 }
 .bug:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4199,7 +4199,7 @@ div .terminal {
   content: "\f188" " ";
 }
 .tag:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4207,7 +4207,7 @@ div .terminal {
   content: "\f02b" " ";
 }
 .tags:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4215,7 +4215,7 @@ div .terminal {
   content: "\f02c" " ";
 }
 .date:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4223,7 +4223,7 @@ div .terminal {
   content: "\f133" " ";
 }
 .time:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4231,7 +4231,7 @@ div .terminal {
   content: "\f017" " ";
 }
 .attachment:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4239,7 +4239,7 @@ div .terminal {
   content: "\f0c6" " ";
 }
 .geo:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4247,7 +4247,7 @@ div .terminal {
   content: "\f041" " ";
 }
 .danger:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4255,7 +4255,7 @@ div .terminal {
   content: "\f071" " ";
 }
 .question:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4263,7 +4263,7 @@ div .terminal {
   content: "\f059" " ";
 }
 .phone:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4271,7 +4271,7 @@ div .terminal {
   content: "\f095" " ";
 }
 .email:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4279,7 +4279,7 @@ div .terminal {
   content: "\f0e0" " ";
 }
 .fax:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4287,7 +4287,7 @@ div .terminal {
   content: "\f1ac" " ";
 }
 .print:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4295,7 +4295,7 @@ div .terminal {
   content: "\f02f" " ";
 }
 .usb:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4303,7 +4303,7 @@ div .terminal {
   content: "\f287" " ";
 }
 .website:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4311,7 +4311,7 @@ div .terminal {
   content: "\f0ac" " ";
 }
 .hastyscribe:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 180%;
@@ -4325,7 +4325,7 @@ div .terminal {
   vertical-align: middle;
 }
 .btc:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4333,7 +4333,7 @@ div .terminal {
   content: "\f15a" "";
 }
 .eur:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4341,7 +4341,7 @@ div .terminal {
   content: "\f153" "";
 }
 .usd:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4349,7 +4349,7 @@ div .terminal {
   content: "\f155" "";
 }
 .gbp:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4357,7 +4357,7 @@ div .terminal {
   content: "\f154" "";
 }
 .jpy:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4365,7 +4365,7 @@ div .terminal {
   content: "\f157" "";
 }
 .inr:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4373,7 +4373,7 @@ div .terminal {
   content: "\f156" "";
 }
 .krw:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4381,7 +4381,7 @@ div .terminal {
   content: "\f159" "";
 }
 .rub:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4389,7 +4389,7 @@ div .terminal {
   content: "\f158" "";
 }
 .try:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 90%;
@@ -4397,7 +4397,7 @@ div .terminal {
   content: "\f195" "";
 }
 .copy:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4405,7 +4405,7 @@ div .terminal {
   content: "\f1f9" " ";
 }
 .reg:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4413,7 +4413,7 @@ div .terminal {
   content: "\f25d" " ";
 }
 .tm:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4421,7 +4421,7 @@ div .terminal {
   content: "\f25c" " ";
 }
 .red-flag:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4429,7 +4429,7 @@ div .terminal {
   content: "\f024" " ";
 }
 .green-flag:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4437,7 +4437,7 @@ div .terminal {
   content: "\f024" " ";
 }
 .yellow-flag:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4445,7 +4445,7 @@ div .terminal {
   content: "\f024" " ";
 }
 .story:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4453,7 +4453,7 @@ div .terminal {
   content: "\f075" " ";
 }
 .feature:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4461,7 +4461,7 @@ div .terminal {
   content: "\f058" " ";
 }
 .project:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4469,7 +4469,7 @@ div .terminal {
   content: "\f0b1" " ";
 }
 .user:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4477,7 +4477,7 @@ div .terminal {
   content: "\f007" " ";
 }
 .add:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4485,7 +4485,7 @@ div .terminal {
   content: "\f055" " ";
 }
 .remove:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4493,7 +4493,7 @@ div .terminal {
   content: "\f056" " ";
 }
 .html5:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4501,7 +4501,7 @@ div .terminal {
   content: "\f13b" " ";
 }
 .css3:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4509,7 +4509,7 @@ div .terminal {
   content: "\f13c" " ";
 }
 .apple:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4517,7 +4517,7 @@ div .terminal {
   content: "\f179" " ";
 }
 .windows:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4525,7 +4525,7 @@ div .terminal {
   content: "\f17a" " ";
 }
 .linux:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4533,7 +4533,7 @@ div .terminal {
   content: "\f17c" " ";
 }
 .android:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4541,7 +4541,7 @@ div .terminal {
   content: "\f17b" " ";
 }
 .bluetooth:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4549,7 +4549,7 @@ div .terminal {
   content: "\f293" " ";
 }
 .wifi:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4557,7 +4557,7 @@ div .terminal {
   content: "\f1eb" " ";
 }
 .signal:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4565,7 +4565,7 @@ div .terminal {
   content: "\f012" " ";
 }
 .idea:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4573,7 +4573,7 @@ div .terminal {
   content: "\f0eb" " ";
 }
 .sticky:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4581,7 +4581,7 @@ div .terminal {
   content: "\f249" " ";
 }
 .link:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4589,7 +4589,7 @@ div .terminal {
   content: "\f0c1" " ";
 }
 .chrome:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4597,7 +4597,7 @@ div .terminal {
   content: "\f268" " ";
 }
 .firefox:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4605,7 +4605,7 @@ div .terminal {
   content: "\f269" " ";
 }
 .ie:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4613,7 +4613,7 @@ div .terminal {
   content: "\f26b" " ";
 }
 .edge:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4621,7 +4621,7 @@ div .terminal {
   content: "\f282" " ";
 }
 .opera:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
@@ -4629,7 +4629,7 @@ div .terminal {
   content: "\f26a" " ";
 }
 .safari:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
   font-size: 100%;
