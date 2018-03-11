@@ -94,7 +94,7 @@
 
 .mix-symbol (@symbol, @color, @size:100%, @space:" "){
   &:before {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: normal;
     font-size: @size;
@@ -118,7 +118,14 @@
 .mix-link-icon (@icon, @space:"\202F") {
   &:before {
     content: @icon @space;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+  }
+}
+
+.mix-brand-link-icon (@icon, @space:"\202F") {
+  &:before {
+    content: @icon @space;
+    font-family: "Font Awesome 5 Brands";
   }
 }
 
