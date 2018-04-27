@@ -4853,7 +4853,7 @@ div .terminal {
   font-weight: normal;
   font-size: 100%;
   color: #777bb3;
-  content: fa-var-php " ";
+  content: "\f457" " ";
 }
 .java:before {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -4861,7 +4861,7 @@ div .terminal {
   font-weight: normal;
   font-size: 100%;
   color: #0074BD;
-  content: fa-var-java " ";
+  content: "\f4e4" " ";
 }
 .aws:before {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -4869,7 +4869,7 @@ div .terminal {
   font-weight: normal;
   font-size: 100%;
   color: #252F3E;
-  content: fa-var-aws " ";
+  content: "\f375" " ";
 }
 .nodejs:before {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -4877,7 +4877,7 @@ div .terminal {
   font-weight: normal;
   font-size: 100%;
   color: #689F63;
-  content: fa-var-node-js " ";
+  content: "\f3d3" " ";
 }
 .erlang:before {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -4885,7 +4885,7 @@ div .terminal {
   font-weight: normal;
   font-size: 100%;
   color: #a90533;
-  content: fa-var-erlang " ";
+  content: "\f39d" " ";
 }
 .python:before {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -4893,7 +4893,7 @@ div .terminal {
   font-weight: normal;
   font-size: 100%;
   color: #306998;
-  content: fa-var-python " ";
+  content: "\f3e2" " ";
 }
 .bluetooth:before {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -4950,6 +4950,14 @@ div .terminal {
   font-size: 100%;
   color: #F5B800;
   content: "\f07b" " ";
+}
+.file:before {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  color: #333;
+  content: "\f15b" " ";
 }
 .chrome:before {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
