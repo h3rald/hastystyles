@@ -4943,22 +4943,6 @@ div .terminal {
   color: #0F4BFF;
   content: "\f0c1" " ";
 }
-.dir:before {
-  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 100%;
-  color: #F5B800;
-  content: "\f07b" "";
-}
-.file:before {
-  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 100%;
-  color: #aaa;
-  content: "\f15b" "";
-}
 .chrome:before {
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-style: normal;
