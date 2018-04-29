@@ -3269,7 +3269,7 @@ li p {
   list-style-type: none;
 }
 dl dt {
-  font-weight: 600;
+  font-weight: bold;
 }
 dl dd {
   padding: 0 0 0.2em 0;
@@ -3281,7 +3281,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: bold;
   color: #111;
   border-bottom: 1px solid #ddd;
 }
@@ -3412,7 +3412,7 @@ span.kbd {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
-  font-weight: 600;
+  font-weight: bold;
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   line-height: 1em;
@@ -3431,7 +3431,7 @@ span.mark {
 abbr,
 span.abbr {
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: bold;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -3469,7 +3469,7 @@ var,
 span.var {
   font-size: 90%;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
-  font-weight: 600;
+  font-weight: bold;
   font-style: normal;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -3479,7 +3479,7 @@ span.var {
 }
 cite,
 span.cite {
-  font-weight: 600;
+  font-weight: bold;
   font-style: italic;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -3515,7 +3515,7 @@ span.dir {
 }
 span.ext,
 span.kwd {
-  font-weight: 600;
+  font-weight: bold;
 }
 img {
   max-width: 100%;

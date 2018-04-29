@@ -15,7 +15,7 @@ li p {
 dl {
 
   dt {
-    font-weight: 600;
+    font-weight: bold;
   }
 
   dd {
@@ -26,7 +26,7 @@ dl {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: bold;
   color: @heading-color;
   border-bottom: 1px solid @gray-d; 
 }
@@ -50,6 +50,7 @@ pre {
   white-space: pre-wrap;
   margin: auto;
   font-family: @monospace-font;
+  @font-weight: 400;
   padding: 0;
   code {
     box-shadow: none;
@@ -128,14 +129,16 @@ code, span.code {
   color: @dark-gray;
   margin: 2px 0px;
   font-family: @monospace-font;
+  @font-weight: 400;
   font-size: 85%;
   .mix-hyphens(none);
 }
 
 kbd, span.kbd {
+  @font-weight: 400;
   .mix-inline-box(@light-gray, @dark-gray, @gray);
   font-family: @monospace-font;
-  font-weight: 600;
+  font-weight: bold;
   border-right: 1px solid @gray-b;
   border-bottom: 1px solid @gray-b;
   line-height: 1em;
@@ -150,7 +153,7 @@ mark, span.mark {
 
 abbr, span.abbr {
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: bold;
   .mix-hyphens(none);
   &:hover {
     cursor: help;
@@ -165,14 +168,15 @@ samp, span.samp {
 
 var, span.var {
   font-size: 90%;
+  @font-weight: 400;
   font-family: @monospace-font; 
-  font-weight: 600;
+  font-weight: bold;
   font-style: normal;
   .mix-hyphens(none);
 }
 
 cite, span.cite {
-  font-weight: 600;
+  font-weight: bold;
   font-style: italic;
   .mix-hyphens(none);
 }
@@ -188,11 +192,12 @@ span.opt, span.arg, span.kwd,
 span.ext, span.file, span.dir {
   font-size: 90%;
   font-family: @monospace-font;
+  @font-weight: 400;
   .mix-hyphens(none);
 }
 
 span.ext, span.kwd {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 img {
