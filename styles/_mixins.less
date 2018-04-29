@@ -1,17 +1,20 @@
 .mix-box (@bg-color, @fg-color, @border-color) {
-  -moz-background-clip:padding;
-  -webkit-background-clip:padding-box;
-  background-clip:padding-box;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  border-radius:3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip :padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   margin: 10px auto;
-  padding:2px 4px 0 4px;
-  box-shadow:0 1px 3px rgba(0,0,0,0.1);
+  padding: 2px 4px 0 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   text-shadow: 0 1px 0 rgba(255,255,255,0.8);
-  color:@fg-color;
-  background-color:@bg-color;
+  color: @fg-color;
+  background-color: @bg-color;
   border:1px solid @border-color;
+  code, samp, pre {
+    color: @fg-color;
+  }
   a {
     color: @dark-blue;
   }

@@ -44,7 +44,7 @@ blockquote {
 }
 
 pre {
-  .mix-box(@light-gray, @dark-gray, @gray-c);
+  .mix-box(transparent, @dark-gray, transparent);
   .mix-responsive;
   white-space: pre-wrap;
   margin: auto;
@@ -124,7 +124,7 @@ hr {
 }
 
 code, span.code {
-  .mix-inline-box(@light-gray, @dark-gray, @light-gray);
+  .mix-inline-box(transparent, @dark-gray, transparent);
   margin: 2px 0px;
   font-family: @monospace-font;
   font-size: 85%;
@@ -158,7 +158,7 @@ abbr, span.abbr {
 
 samp, span.samp {
   font-size: 90%;
-  .mix-inline-box(@light-gray, @dark-gray, @light-gray);
+  .mix-inline-box(transparent, @dark-gray, transparent);
   .mix-hyphens(none);
 }
 
