@@ -3294,34 +3294,11 @@ blockquote {
   font-style: italic;
 }
 pre {
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  margin: 10px auto;
-  padding: 2px 4px 0 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   color: #222;
-  background-color: transparent;
-  border: 1px solid transparent;
   white-space: pre-wrap;
   margin: auto;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   padding: 0;
-}
-pre code,
-pre samp,
-pre pre {
-  color: #222;
-}
-pre a {
-  color: #264c72;
-}
-pre p {
-  margin: 0 auto;
 }
 @media screen and (max-width: 639px) {
   pre {
@@ -3407,19 +3384,6 @@ hr {
 code,
 span.code {
   color: #222;
-  background-color: transparent;
-  padding: 0 3px 0;
-  display: inline-block;
-  width: auto;
-  margin: 1px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin: 2px 0px;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   font-size: 85%;
