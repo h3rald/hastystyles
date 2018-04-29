@@ -3188,6 +3188,10 @@ table {
 .fab {
   font-family: 'Font Awesome 5 Brands';
 }
+.mix-monospace {
+  font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
+  font-weight: 300;
+}
 .mix-no-border-radius {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -3296,10 +3300,11 @@ blockquote {
   font-style: italic;
 }
 pre {
+  font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
+  font-weight: 300;
   color: #222;
   white-space: pre-wrap;
   margin: auto;
-  font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   padding: 0;
 }
 @media screen and (max-width: 639px) {
@@ -3384,9 +3389,10 @@ hr {
 }
 code,
 span.code {
+  font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
+  font-weight: 300;
   color: #222;
   margin: 2px 0px;
-  font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   font-size: 85%;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -3506,6 +3512,7 @@ span.file,
 span.dir {
   font-size: 90%;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
+  font-weight: 300;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -3730,7 +3737,6 @@ a[href="#document-top"]:before {
   color: #264c72;
   background-color: #d8ebf8;
   border: 1px solid #A4D1EF;
-  font-size: 90%;
 }
 .note code,
 .note samp,
@@ -3758,6 +3764,11 @@ a[href="#document-top"]:before {
   color: #264c72;
   content: "\f08d" " ";
 }
+.note pre,
+.note code {
+  font-size: 400;
+  color: #19324c;
+}
 .note a {
   color: #132639;
 }
@@ -3775,7 +3786,6 @@ a[href="#document-top"]:before {
   color: #009926;
   background-color: #d8f5cd;
   border: 1px solid #B0EB99;
-  font-size: 90%;
 }
 .tip code,
 .tip samp,
@@ -3803,6 +3813,11 @@ a[href="#document-top"]:before {
   color: #009926;
   content: "\f058" " ";
 }
+.tip pre,
+.tip code {
+  font-size: 400;
+  color: #006619;
+}
 .tip a {
   color: #004d13;
 }
@@ -3820,7 +3835,6 @@ a[href="#document-top"]:before {
   color: #705400;
   background-color: #FFEBAD;
   border: 1px solid #FFDB70;
-  font-size: 90%;
 }
 .warning code,
 .warning samp,
@@ -3848,6 +3862,11 @@ a[href="#document-top"]:before {
   color: #705400;
   content: "\f071" " ";
 }
+.warning pre,
+.warning code {
+  font-size: 400;
+  color: #3d2e00;
+}
 .warning a {
   color: #241b00;
 }
@@ -3865,7 +3884,6 @@ a[href="#document-top"]:before {
   color: #555;
   background-color: #f8f8f8;
   border: 1px solid #f8f8f8;
-  font-size: 90%;
 }
 .sidebar code,
 .sidebar samp,
@@ -3892,6 +3910,11 @@ a[href="#document-top"]:before {
   font-size: 100%;
   color: #555;
   content: "\f05a" " ";
+}
+.sidebar pre,
+.sidebar code {
+  font-size: 400;
+  color: #3b3b3b;
 }
 .sidebar a {
   color: #2f2f2f;
@@ -3967,7 +3990,7 @@ a[href="#document-top"]:before {
   margin-top: -40px;
   margin-bottom: 0;
   text-shadow: none;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   font-size: 85%;
   color: #eee;
@@ -4029,7 +4052,7 @@ a[href="#document-top"]:before {
   margin-top: -40px;
   margin-bottom: 0;
   text-shadow: none;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   font-size: 85%;
   color: #eee;

@@ -46,11 +46,10 @@ blockquote {
 
 pre {
   .mix-responsive;
+  .mix-monospace;
   color: @dark-gray;
   white-space: pre-wrap;
   margin: auto;
-  font-family: @monospace-font;
-  @font-weight: 400;
   padding: 0;
   code {
     box-shadow: none;
@@ -125,10 +124,9 @@ hr {
 }
 
 code, span.code {
+  .mix-monospace;
   color: @dark-gray;
   margin: 2px 0px;
-  font-family: @monospace-font;
-  @font-weight: 400;
   font-size: 85%;
   .mix-hyphens(none);
 }
@@ -190,8 +188,7 @@ span.tt, span.cmd,
 span.opt, span.arg, span.kwd,
 span.ext, span.file, span.dir {
   font-size: 90%;
-  font-family: @monospace-font;
-  @font-weight: 400;
+  .mix-monospace;
   .mix-hyphens(none);
 }
 
