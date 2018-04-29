@@ -3752,7 +3752,7 @@ a[href="#document-top"]:before {
   margin: 0 auto;
 }
 .note p:first-child {
-  font-weight: bold;
+  font-weight: 600;
   color: #264c72;
 }
 .note p:first-child:before {
@@ -3802,7 +3802,7 @@ a[href="#document-top"]:before {
   margin: 0 auto;
 }
 .tip p:first-child {
-  font-weight: bold;
+  font-weight: 600;
   color: #009926;
 }
 .tip p:first-child:before {
@@ -3852,7 +3852,7 @@ a[href="#document-top"]:before {
   margin: 0 auto;
 }
 .warning p:first-child {
-  font-weight: bold;
+  font-weight: 600;
   color: #705400;
 }
 .warning p:first-child:before {
@@ -3902,7 +3902,7 @@ a[href="#document-top"]:before {
   margin: 0 auto;
 }
 .sidebar p:first-child {
-  font-weight: bold;
+  font-weight: 600;
   color: #555;
 }
 .sidebar p:first-child:before {
@@ -4118,7 +4118,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 600;
   content: "todo";
 }
 .fixme {
@@ -4150,7 +4150,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 600;
   content: "fixme";
 }
 .deadline {
@@ -4182,7 +4182,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 600;
   content: "deadline";
 }
 .important {
@@ -4214,7 +4214,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 600;
   content: "important";
 }
 .urgent {
@@ -4246,7 +4246,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 600;
   content: "urgent";
 }
 .verify {
@@ -4278,7 +4278,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 600;
   content: "verify";
 }
 .draftcomment {
@@ -4310,7 +4310,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 600;
   content: "comment";
 }
 .red-circle:before {
