@@ -3315,7 +3315,6 @@ pre {
 }
 pre code {
   box-shadow: none;
-  padding: 0px 2px 0 2px;
   border: none;
   line-height: 1.2em;
 }
@@ -3387,14 +3386,13 @@ code,
 span.code {
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   font-weight: 300;
-  color: #222;
-  margin: 2px 0px;
-  font-size: 85%;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   -o-hyphens: none;
   hyphens: none;
+  color: #000;
+  font-size: 85%;
 }
 strong code,
 b code {
@@ -3968,7 +3966,6 @@ a[href="#document-top"]:before {
   -ms-hyphens: none;
   -o-hyphens: none;
   hyphens: none;
-  font-size: 95%;
   padding: 0 3px;
   border: 2px solid #999;
   white-space: pre-wrap;
@@ -4036,7 +4033,6 @@ a[href="#document-top"]:before {
   -ms-hyphens: none;
   -o-hyphens: none;
   hyphens: none;
-  font-size: 95%;
   padding: 0 3px;
   border: 2px solid #999;
   white-space: pre-wrap;
