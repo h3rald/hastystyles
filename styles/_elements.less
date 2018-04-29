@@ -131,6 +131,10 @@ code, span.code {
   .mix-hyphens(none);
 }
 
+strong code, b code {
+  font-weight: 600;  
+}
+
 kbd, span.kbd {
   @font-weight: 400;
   .mix-inline-box(@light-gray, @dark-gray, @gray);
@@ -145,7 +149,7 @@ kbd, span.kbd {
 
 mark, span.mark {
   padding: 0 1px;
-  color: @gray-2;
+  color: @dark-gray;
 }
 
 abbr, span.abbr {

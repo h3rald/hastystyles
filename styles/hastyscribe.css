@@ -3396,6 +3396,10 @@ span.code {
   -o-hyphens: none;
   hyphens: none;
 }
+strong code,
+b code {
+  font-weight: 600;
+}
 kbd,
 span.kbd {
   color: #222;
@@ -3959,6 +3963,12 @@ a[href="#document-top"]:before {
   color: #eee;
   background-color: #222;
   border: 1px solid #ccc;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  font-size: 95%;
   padding: 0 3px;
   border: 2px solid #999;
   white-space: pre-wrap;
@@ -4021,6 +4031,12 @@ a[href="#document-top"]:before {
   color: #eee;
   background-color: #222;
   border: 1px solid #ccc;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  font-size: 95%;
   padding: 0 3px;
   border: 2px solid #999;
   white-space: pre-wrap;
