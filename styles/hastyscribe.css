@@ -3166,8 +3166,6 @@ table {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url('../webfonts/fa-solid-900.eot');
-  src: url('../webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('../webfonts/fa-solid-900.woff2') format('woff2'), url('../webfonts/fa-solid-900.woff') format('woff'), url('../webfonts/fa-solid-900.ttf') format('truetype'), url('../webfonts/fa-solid-900.svg#fontawesome') format('svg');
 }
 .fa,
 .fas {
@@ -3182,8 +3180,6 @@ table {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url('../webfonts/fa-brands-400.eot');
-  src: url('../webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), url('../webfonts/fa-brands-400.woff2') format('woff2'), url('../webfonts/fa-brands-400.woff') format('woff'), url('../webfonts/fa-brands-400.ttf') format('truetype'), url('../webfonts/fa-brands-400.svg#fontawesome') format('svg');
 }
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -3737,6 +3733,7 @@ a[href="#document-top"]:before {
   color: #264c72;
   background-color: #d8ebf8;
   border: 1px solid #A4D1EF;
+  font-size: 95%;
 }
 .note code,
 .note samp,
@@ -3786,6 +3783,7 @@ a[href="#document-top"]:before {
   color: #009926;
   background-color: #d8f5cd;
   border: 1px solid #B0EB99;
+  font-size: 95%;
 }
 .tip code,
 .tip samp,
@@ -3835,6 +3833,7 @@ a[href="#document-top"]:before {
   color: #705400;
   background-color: #FFEBAD;
   border: 1px solid #FFDB70;
+  font-size: 95%;
 }
 .warning code,
 .warning samp,
@@ -3884,6 +3883,7 @@ a[href="#document-top"]:before {
   color: #555;
   background-color: #f8f8f8;
   border: 1px solid #f8f8f8;
+  font-size: 95%;
 }
 .sidebar code,
 .sidebar samp,
