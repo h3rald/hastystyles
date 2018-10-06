@@ -2,6 +2,7 @@
 .tip {.mix-titled-block(@lighter-green, @dark-green, @light-green, @fa-var-check-circle);}
 .warning {.mix-titled-block(@lighter-yellow, @dark-yellow, @light-yellow, @fa-var-exclamation-triangle);}
 
+.blank-sidebar {.mix-titled-block(@lightest-gray, @gray-5, @lightest-gray, "");}
 .sidebar {.mix-titled-block(@light-gray, @gray-5, @light-gray, @fa-var-info-circle);}
 .output {.mix-box(@light-gray, @gray-5, @light-gray);}
 
@@ -13,7 +14,7 @@
   border: 2px solid @gray-9;
   white-space: pre-wrap;
   border-top: 10px solid @gray-9;
-  p, p:first-child {
+  & > p, & > p:first-child {
     margin-top: -40px;
     margin-bottom: 0;
     text-shadow: none;
@@ -36,7 +37,7 @@
 
 .terminal-su {
   .terminal;
-  p, p:first-child {
+  & > p, & > p:first-child {
     &:before {
       color: @bright-red;
       content: "# ";
