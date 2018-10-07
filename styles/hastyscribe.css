@@ -4052,6 +4052,14 @@ a[href="#document-top"]:before {
   font-size: 85%;
   color: #eee;
 }
+.terminal > p code,
+.terminal > p:first-child code,
+.terminal > p pre,
+.terminal > p:first-child pre,
+.terminal > p samp,
+.terminal > p:first-child samp {
+  font-size: 100%;
+}
 .terminal > p:first-child,
 .terminal > p:first-child:first-child {
   margin-top: 0px;
@@ -4118,6 +4126,14 @@ a[href="#document-top"]:before {
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   font-size: 85%;
   color: #eee;
+}
+.terminal-su > p code,
+.terminal-su > p:first-child code,
+.terminal-su > p pre,
+.terminal-su > p:first-child pre,
+.terminal-su > p samp,
+.terminal-su > p:first-child samp {
+  font-size: 100%;
 }
 .terminal-su > p:first-child,
 .terminal-su > p:first-child:first-child {
