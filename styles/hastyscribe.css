@@ -4854,14 +4854,18 @@ table {
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@font-face {
+/*@font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  font-display: block;
-  src: url('../webfonts/fa-solid-900.eot');
-  src: url('../webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('../webfonts/fa-solid-900.woff2') format('woff2'), url('../webfonts/fa-solid-900.woff') format('woff'), url('../webfonts/fa-solid-900.ttf') format('truetype'), url('../webfonts/fa-solid-900.svg#fontawesome') format('svg');
-}
+  font-display: @fa-font-display;
+  src: url('@{fa-font-path}/fa-solid-900.eot');
+  src: url('@{fa-font-path}/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+    url('@{fa-font-path}/fa-solid-900.woff2') format('woff2'),
+    url('@{fa-font-path}/fa-solid-900.woff') format('woff'),
+    url('@{fa-font-path}/fa-solid-900.ttf') format('truetype'),
+    url('@{fa-font-path}/fa-solid-900.svg#fontawesome') format('svg');
+}*/
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
@@ -4871,21 +4875,25 @@ table {
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@font-face {
+/*@font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
-  font-display: block;
-  src: url('../webfonts/fa-brands-400.eot');
-  src: url('../webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), url('../webfonts/fa-brands-400.woff2') format('woff2'), url('../webfonts/fa-brands-400.woff') format('woff'), url('../webfonts/fa-brands-400.ttf') format('truetype'), url('../webfonts/fa-brands-400.svg#fontawesome') format('svg');
-}
+  font-display: @fa-font-display;
+  src: url('@{fa-font-path}/fa-brands-400.eot');
+  src: url('@{fa-font-path}/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+    url('@{fa-font-path}/fa-brands-400.woff2') format('woff2'),
+    url('@{fa-font-path}/fa-brands-400.woff') format('woff'),
+    url('@{fa-font-path}/fa-brands-400.ttf') format('truetype'),
+    url('@{fa-font-path}/fa-brands-400.svg#fontawesome') format('svg');
+}*/
 .fab {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
 }
 .mix-monospace {
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
-  font-weight: 300;
+  font-weight: 400;
 }
 .mix-no-border-radius {
   -webkit-border-radius: 0px;
@@ -4907,7 +4915,7 @@ body {
   margin: 0 auto;
   height: 100%;
   zoom: 1;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: normal;
   word-spacing: normal;
   color: #333;
@@ -4930,6 +4938,11 @@ body {
 @media screen and (min-width: 660px) {
   body {
     width: 660px;
+  }
+}
+@media screen and (min-width: 880px) {
+  body {
+    width: 880px;
   }
 }
 #main,
@@ -4968,7 +4981,7 @@ li p {
   list-style-type: none;
 }
 dl dt {
-  font-weight: 600;
+  font-weight: 700;
 }
 dl dd {
   padding: 0 0 0.2em 0;
@@ -4980,7 +4993,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 700;
   color: #111;
   border-bottom: 1px solid #ddd;
 }
@@ -4996,7 +5009,7 @@ blockquote {
 }
 pre {
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
-  font-weight: 300;
+  font-weight: 400;
   color: #222;
   white-space: pre-wrap;
   margin: auto;
@@ -5084,7 +5097,7 @@ hr {
 code,
 span.code {
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -5095,7 +5108,7 @@ span.code {
 }
 strong code,
 b code {
-  font-weight: 600;
+  font-weight: 700;
 }
 kbd,
 span.kbd {
@@ -5114,7 +5127,7 @@ span.kbd {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
-  font-weight: 800;
+  font-weight: 700;
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   line-height: 1em;
@@ -5133,7 +5146,7 @@ span.mark {
 abbr,
 span.abbr {
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -5171,7 +5184,7 @@ var,
 span.var {
   font-size: 90%;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -5181,7 +5194,7 @@ span.var {
 }
 cite,
 span.cite {
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -5209,7 +5222,7 @@ span.file,
 span.dir {
   font-size: 90%;
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -5218,7 +5231,7 @@ span.dir {
 }
 span.ext,
 span.kwd {
-  font-weight: 600;
+  font-weight: 700;
 }
 img {
   max-width: 100%;
@@ -5232,6 +5245,26 @@ a:visited {
 a:hover,
 a:visited:hover {
   text-decoration: underline;
+}
+/* Checkboxes */
+li.github_checkbox {
+  list-style-type: none;
+}
+li.github_checkbox input[type="checkbox"] {
+  width: 0;
+  height: 0;
+}
+li.github_checkbox input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  content: '\f0c8';
+  top: -14px;
+  left: -14px;
+  position: relative;
+  color: #aaa;
+}
+li.github_checkbox input[type="checkbox"]:checked::after {
+  content: '\f14a';
+  color: #00CC33;
 }
 a[href^="http://"]:before,
 a[href^="https://"]:before,
@@ -5406,7 +5439,7 @@ a[href*="youtube.com"]:before {
 }
 a[href="#document-top"] {
   vertical-align: super;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 15px;
   float: right;
 }
@@ -5447,11 +5480,17 @@ a[href="#document-top"]:before {
 .note p {
   margin: 0 auto;
 }
+@media screen and (min-width: 880px) {
+  .note {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 .note > p {
   margin: 0 auto;
 }
 .note > p:first-child {
-  font-weight: 600;
+  font-weight: 700;
   color: #264c72;
 }
 .note > p:first-child:before {
@@ -5497,11 +5536,17 @@ a[href="#document-top"]:before {
 .tip p {
   margin: 0 auto;
 }
+@media screen and (min-width: 880px) {
+  .tip {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 .tip > p {
   margin: 0 auto;
 }
 .tip > p:first-child {
-  font-weight: 600;
+  font-weight: 700;
   color: #009926;
 }
 .tip > p:first-child:before {
@@ -5547,11 +5592,17 @@ a[href="#document-top"]:before {
 .warning p {
   margin: 0 auto;
 }
+@media screen and (min-width: 880px) {
+  .warning {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 .warning > p {
   margin: 0 auto;
 }
 .warning > p:first-child {
-  font-weight: 600;
+  font-weight: 700;
   color: #705400;
 }
 .warning > p:first-child:before {
@@ -5597,11 +5648,17 @@ a[href="#document-top"]:before {
 .blank-sidebar p {
   margin: 0 auto;
 }
+@media screen and (min-width: 880px) {
+  .blank-sidebar {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 .blank-sidebar > p {
   margin: 0 auto;
 }
 .blank-sidebar > p:first-child {
-  font-weight: 600;
+  font-weight: 700;
   color: #555;
 }
 .blank-sidebar > p:first-child:before {
@@ -5647,11 +5704,17 @@ a[href="#document-top"]:before {
 .sidebar p {
   margin: 0 auto;
 }
+@media screen and (min-width: 880px) {
+  .sidebar {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 .sidebar > p {
   margin: 0 auto;
 }
 .sidebar > p:first-child {
-  font-weight: 600;
+  font-weight: 700;
   color: #555;
 }
 .sidebar > p:first-child:before {
@@ -5696,6 +5759,12 @@ a[href="#document-top"]:before {
 .output p {
   margin: 0 auto;
 }
+@media screen and (min-width: 880px) {
+  .output {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 .terminal {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
@@ -5730,6 +5799,12 @@ a[href="#document-top"]:before {
 }
 .terminal p {
   margin: 0 auto;
+}
+@media screen and (min-width: 880px) {
+  .terminal {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }
 @media screen and (max-width: 639px) {
   .terminal {
@@ -5767,7 +5842,7 @@ a[href="#document-top"]:before {
 .terminal > p:first-child:before {
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   color: #009926;
   content: "$ ";
 }
@@ -5806,6 +5881,12 @@ a[href="#document-top"]:before {
 .terminal-su p {
   margin: 0 auto;
 }
+@media screen and (min-width: 880px) {
+  .terminal-su {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 @media screen and (max-width: 639px) {
   .terminal-su {
     overflow-y: hidden;
@@ -5842,7 +5923,7 @@ a[href="#document-top"]:before {
 .terminal-su > p:first-child:before {
   font-family: "Source Code Pro", "Monaco", "DejaVu Sans Mono", "Courier New", monospace;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   color: #009926;
   content: "$ ";
 }
@@ -5853,6 +5934,12 @@ a[href="#document-top"]:before {
 }
 div .terminal {
   margin: 2px auto;
+}
+@media screen and (min-width: 880px) {
+  div .terminal {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }
 .todo {
   color: #CC3300;
@@ -5875,7 +5962,7 @@ div .terminal {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px 1px 3px 1px;
   line-height: 95%;
   width: 70px;
   text-align: center;
@@ -5883,7 +5970,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   content: "todo";
 }
 .fixme {
@@ -5907,7 +5994,7 @@ div .terminal {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px 1px 3px 1px;
   line-height: 95%;
   width: 70px;
   text-align: center;
@@ -5915,7 +6002,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   content: "fixme";
 }
 .deadline {
@@ -5939,7 +6026,7 @@ div .terminal {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px 1px 3px 1px;
   line-height: 95%;
   width: 70px;
   text-align: center;
@@ -5947,7 +6034,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   content: "deadline";
 }
 .important {
@@ -5971,7 +6058,7 @@ div .terminal {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px 1px 3px 1px;
   line-height: 95%;
   width: 70px;
   text-align: center;
@@ -5979,7 +6066,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   content: "important";
 }
 .urgent {
@@ -6003,7 +6090,7 @@ div .terminal {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px 1px 3px 1px;
   line-height: 95%;
   width: 70px;
   text-align: center;
@@ -6011,7 +6098,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   content: "urgent";
 }
 .verify {
@@ -6035,7 +6122,7 @@ div .terminal {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px 1px 3px 1px;
   line-height: 95%;
   width: 70px;
   text-align: center;
@@ -6043,7 +6130,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   content: "verify";
 }
 .draftcomment {
@@ -6067,7 +6154,7 @@ div .terminal {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px 1px 3px 1px;
   line-height: 95%;
   width: 70px;
   text-align: center;
@@ -6075,7 +6162,7 @@ div .terminal {
   box-shadow: none;
   font-size: 90%;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   content: "comment";
 }
 .red-circle:before {
@@ -6857,6 +6944,9 @@ div .terminal {
 /***************/
 .headings #toc {
   counter-reset: toc2;
+}
+#toc > ul > li > ul > li > a {
+  font-weight: 700;
 }
 .headings #toc li li a {
   counter-reset: toc3;

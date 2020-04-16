@@ -18,7 +18,7 @@
     margin-top: -40px;
     margin-bottom: 0;
     text-shadow: none;
-    font-weight: 400;
+    font-weight: @normal-weight;
     font-family: @monospace-font;
     font-size: 85%;
     code, pre, samp {
@@ -31,7 +31,7 @@
     &:before {
       font-family: @monospace-font;
       font-style: normal;
-      font-weight: 800;
+      font-weight: @bold-weight;
       color: @dark-green;
       content: "$ ";
     }
@@ -50,4 +50,8 @@
 
 div .terminal {
   margin: 2px auto;
+  @media screen and (min-width: 880px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }

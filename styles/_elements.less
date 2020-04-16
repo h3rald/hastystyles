@@ -1,6 +1,7 @@
 /* Lists */
 
-ul, ol {
+ul,
+ol {
   padding-left: 30px;
 }
 
@@ -15,7 +16,7 @@ li p {
 dl {
 
   dt {
-    font-weight: 600;
+    font-weight: @bold-weight;
   }
 
   dd {
@@ -25,10 +26,15 @@ dl {
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: @bold-weight;
   color: @heading-color;
-  border-bottom: 1px solid @gray-d; 
+  border-bottom: 1px solid @gray-d;
 }
 
 h1 {
@@ -51,11 +57,13 @@ pre {
   white-space: pre-wrap;
   margin: auto;
   padding: 0;
+
   code {
     box-shadow: none;
     border: none;
     line-height: 1.2em;
   }
+
   .hljs {
     padding: 0 3px;
   }
@@ -67,24 +75,27 @@ pre {
 }
 
 table {
-  border-collapse:collapse;
+  border-collapse: collapse;
   margin: 15px auto;
-  border-spacing:0;
-  empty-cells:show;
+  border-spacing: 0;
+  empty-cells: show;
   min-width: 100%;
+
   thead {
     background: @light-gray;
-    color:#222;
-    text-align:left;
-    vertical-align:bottom;
+    color: #222;
+    text-align: left;
+    vertical-align: bottom;
   }
-  td, th {
-    background-color:transparent;
-    border:1px solid @gray;
-    font-size:inherit;
-    margin:0;
-    overflow:visible;
-    padding:6px 12px;
+
+  td,
+  th {
+    background-color: transparent;
+    border: 1px solid @gray;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 6px 12px;
   }
 }
 
@@ -96,10 +107,10 @@ address {
 hr {
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(99,99,99,0), rgba(99,99,99,0.75), rgba(99,99,99,0)); 
-  background-image:    -moz-linear-gradient(left, rgba(99,99,99,0), rgba(99,99,99,0.75), rgba(99,99,99,0)); 
-  background-image:     -ms-linear-gradient(left, rgba(99,99,99,0), rgba(99,99,99,0.75), rgba(99,99,99,0)); 
-  background-image:      -o-linear-gradient(left, rgba(99,99,99,0), rgba(99,99,99,0.75), rgba(99,99,99,0)); 
+  background-image: -webkit-linear-gradient(left, rgba(99, 99, 99, 0), rgba(99, 99, 99, 0.75), rgba(99, 99, 99, 0));
+  background-image: -moz-linear-gradient(left, rgba(99, 99, 99, 0), rgba(99, 99, 99, 0.75), rgba(99, 99, 99, 0));
+  background-image: -ms-linear-gradient(left, rgba(99, 99, 99, 0), rgba(99, 99, 99, 0.75), rgba(99, 99, 99, 0));
+  background-image: -o-linear-gradient(left, rgba(99, 99, 99, 0), rgba(99, 99, 99, 0.75), rgba(99, 99, 99, 0));
 }
 
 .center {
@@ -122,22 +133,25 @@ hr {
   font-family: "Font Awesome 5 Brands";
 }
 
-code, span.code {
+code,
+span.code {
   .mix-monospace;
   .mix-hyphens(none);
   color: #B2361E;
   font-size: 85%;
 }
 
-strong code, b code {
-  font-weight: 600;  
+strong code,
+b code {
+  font-weight: @bold-weight;
 }
 
-kbd, span.kbd {
-  @font-weight: 400;
+kbd,
+span.kbd {
+  @font-weight: @normal-weight;
   .mix-inline-box(@light-gray, @dark-gray, @gray);
   font-family: @monospace-font;
-  font-weight: 800;
+  font-weight: @bold-weight;
   border-right: 1px solid @gray-b;
   border-bottom: 1px solid @gray-b;
   line-height: 1em;
@@ -145,69 +159,112 @@ kbd, span.kbd {
   .mix-hyphens(none);
 }
 
-mark, span.mark {
+mark,
+span.mark {
   padding: 0 1px;
   color: @dark-gray;
 }
 
-abbr, span.abbr {
+abbr,
+span.abbr {
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: @bold-weight;
   .mix-hyphens(none);
+
   &:hover {
     cursor: help;
   }
 }
 
-samp, span.samp {
+samp,
+span.samp {
   font-size: 90%;
   .mix-inline-box(transparent, @dark-gray, transparent);
   .mix-hyphens(none);
 }
 
-var, span.var {
+var,
+span.var {
   font-size: 90%;
-  @font-weight: 400;
-  font-family: @monospace-font; 
-  font-weight: 800;
+  @font-weight: @normal-weight;
+  font-family: @monospace-font;
+  font-weight: @bold-weight;
   font-style: normal;
   .mix-hyphens(none);
 }
 
-cite, span.cite {
-  font-weight: 600;
+cite,
+span.cite {
+  font-weight: @bold-weight;
   font-style: italic;
   .mix-hyphens(none);
 }
 
-q, span.q {
+q,
+span.q {
   font-style: italic;
   color: @gray-6;
   .mix-hyphens(none);
 }
 
-span.tt, span.cmd, 
-span.opt, span.arg, span.kwd,
-span.ext, span.file, span.dir {
+span.tt,
+span.cmd,
+span.opt,
+span.arg,
+span.kwd,
+span.ext,
+span.file,
+span.dir {
   font-size: 90%;
   .mix-monospace;
   .mix-hyphens(none);
 }
 
-span.ext, span.kwd {
-  font-weight: 600;
+span.ext,
+span.kwd {
+  font-weight: @bold-weight;
 }
 
 img {
-  max-width: 100%;  
+  max-width: 100%;
 }
 
 /* Links */
 
-a,a:visited {
+a,
+a:visited {
   color: @link-color;
-  text-decoration:none;
+  text-decoration: none;
+
   &:hover {
-    text-decoration:underline;
+    text-decoration: underline;
   }
+}
+
+/* Checkboxes */
+
+li.github_checkbox {
+
+  list-style-type: none;
+
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+  }
+
+  input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    content: '\f0c8';
+    top: -14px;
+    left: -14px;
+    position: relative;
+    color: @gray-a;
+  }
+
+  input[type="checkbox"]:checked::after {
+    content: '\f14a';
+    color: @bright-green;
+  }
+
+
 }

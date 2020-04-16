@@ -46,7 +46,9 @@
 .headings #toc {
   counter-reset: toc2;
 }
-
+#toc>ul>li>ul>li>a {
+  font-weight: @bold-weight;
+}
 .headings #toc li li a {
   counter-reset:toc3;
   counter-increment: toc2;
