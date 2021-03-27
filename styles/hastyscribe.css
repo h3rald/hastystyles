@@ -4953,22 +4953,19 @@ body {
   margin: auto;
 }
 #_sidebar {
-  height: 80%;
   width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-  border-left: 1px solid #ddd;
-  font-size: 80%;
+  border-left: 1px solid #ddd;  
 }
 #_sidebar p {
   line-height: 0.6em;
 }
 #_footer {
   border-top: 1px solid #ddd;
-  text-align: left;
-  font-size: 80%;
+  text-align: left;  
 }
 #_footer p {
   line-height: 0.6em;
