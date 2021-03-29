@@ -33,9 +33,29 @@ body {
   }
 }
 
-#main, #footer, #header {
+#main, #_footer, #footer, #header {
   width: 94%;
   margin:auto;
+}
+
+#_sidebar {  
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border-left: 1px solid @gray-d;
+  p {
+    line-height: 0.6em;
+  }
+}
+
+#_footer {
+  border-top: 1px solid @gray-d;
+  text-align: left;
+  p {
+    line-height: 0.6em;
+  }
 }
 
 #footer {
