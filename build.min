@@ -1,0 +1,53 @@
+
+;;; hastystyles.fa.svg
+
+"Merging FA sprites..." notice!
+
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"display: none;\">
+</svg>" :svg-container
+
+svg-container from-xml :svg
+
+"./src/icons/solid.svg" fread from-xml "symbol" xqueryall :solid-symbols
+"./src/icons/brands.svg" fread from-xml "symbol" xqueryall :brands-symbols
+
+solid-symbols size :n-solid
+brands-symbols size :n-brands
+
+"Solid icons: $# - Brand icons: $#" (n-solid n-brands) =% notice!
+
+solid-symbols brands-symbols concat :fa-symbols
+
+fa-symbols size :n-symbols
+
+"Total icons: $#" (n-symbols) =% notice!
+
+svg fa-symbols %children @svg
+
+svg to-xml "./dist/hastystyles.fa.svg" fwrite
+
+"Generated: hastystyles.fa.svg" notice!
+
+;;; hastystyles.fa.css
+
+"Generating CSS rules..." notice!
+
+".fa-$1 { background: url('#fa-$1') no-repeat }" :rule
+
+
+fa-symbols 
+    (
+        :icon
+        *icon/attributes/id :id
+        rule (id) =%
+    ) map
+    "\n" join "./dist/hastystyles.fa.css" fwrite
+
+"Generated: hastystyles.fa.css" notice!
+
+;;; hastystyles.css
+
+!"lessc ./src/styles/hastystyles.less ./dist/hastystyles.css"
+
+"Generated: hastystyles.css" notice!

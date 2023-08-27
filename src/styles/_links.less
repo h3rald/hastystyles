@@ -1,0 +1,64 @@
+a[href^="http://"], 
+a[href^="https://"],
+a[href^="ftp://"],
+a[href^="sftp://"]{ .mix-link-icon("globe");}
+a[href^="mailto:"] { .mix-link-icon("envelope");}
+a[href^="magnet://"] { .mix-link-icon("magnet");}
+a[href^="tel:"] { .mix-link-icon("phone");}
+a[href^="skype://"], a[href*="skype.com"] { .mix-brand-link-icon("skype");}
+a[href^="git@"] { .mix-brand-link-icon("git"); }
+a[href*="amazon.com"] { .mix-brand-link-icon("amazon"); }
+a[href*="bitbucket.com"] { .mix-brand-link-icon("bitbucket"); }
+a[href*="blogger.com"] { .mix-brand-link-icon("blogger"); }
+a[href*="deviantart.com"] { .mix-brand-link-icon("deviantart"); }
+a[href*="dropbox.com"] { .mix-brand-link-icon("dropbox"); }
+a[href*="digg.com"] { .mix-brand-link-icon("digg"); }
+a[href*="linkedin.com"] { .mix-brand-link-icon("linkedin"); }
+a[href*="facebook.com"] { .mix-brand-link-icon("facebook-square"); }
+a[href*="flickr.com"] { .mix-brand-link-icon("flickr"); }
+a[href*="foursquare.com"] { .mix-brand-link-icon("foursquare"); }
+a[href*="github.com"] { .mix-brand-link-icon("github"); }
+a[href*="gitlab.com"] { .mix-brand-link-icon("gitlab"); }
+a[href*="google.com"] { .mix-brand-link-icon("google"); }
+a[href*="plus.google.com"] { .mix-brand-link-icon("google-plus-square"); }
+a[href*="news.ycombinator.com"] { .mix-brand-link-icon("hacker-news"); }
+a[href*="imdb.com"] { .mix-brand-link-icon("imdb"); }
+a[href*="instagram.com"] { .mix-brand-link-icon("instagram"); }
+a[href*="jsfiddle.com"] { .mix-brand-link-icon("jsfiddle"); }
+a[href*="kickstarter.com"] { .mix-brand-link-icon("kickstarter"); }
+a[href*="medium.com"] { .mix-brand-link-icon("medium"); }
+a[href*="npmjs.com"] { .mix-brand-link-icon("npm"); }
+a[href*="pinterest.com"] { .mix-brand-link-icon("pinterest"); }
+a[href*="quora.com"] { .mix-brand-link-icon("quora"); }
+a[href*="reddit.com"] { .mix-brand-link-icon("reddit"); }
+a[href*="stackoverflow.com"] { .mix-brand-link-icon("stack-overflow"); }
+a[href*="trello.com"] { .mix-brand-link-icon("trello"); }
+a[href*="tripadvisor.com"] { .mix-brand-link-icon("tripadvisor"); }
+a[href*="tumblr.com"] { .mix-brand-link-icon("tumblr-square"); }
+a[href*="twitter.com"] { .mix-brand-link-icon("twitter"); }
+a[href*="vimeo.com"] { .mix-brand-link-icon("vimeo-square"); }
+a[href*="wikipedia.com"] { .mix-brand-link-icon("wikipedia-w"); }
+a[href*="wordpress.com"] { .mix-brand-link-icon("wordpress"); }
+a[href*="wordpress.org"] { .mix-brand-link-icon("wordpress"); }
+a[href*="yahoo.com"] { .mix-brand-link-icon("yahoo"); }
+a[href*="youtube.com"] { .mix-brand-link-icon("youtube"); }
+
+#footer a:before { content: ""; }
+
+a[href="#document-top"] { 
+  vertical-align: super; 
+  font-weight: @normal-weight;
+  font-size: 15px;
+  .mix-link-icon("angle-double-up");
+  float:right;
+}
+
+#footer a {
+  &:hover {
+    text-decoration: none;
+  }
+  &:after {
+    content: none;
+  }
+}
+
