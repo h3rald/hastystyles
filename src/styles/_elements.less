@@ -120,17 +120,58 @@ hr {
 
 /* Inline */
 
-[class^="fa-"] {
-  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+[class^="fa-"], [href^=http], [href^=mailto], 
+[href^=git], [href^=tel], [href^=magnet],
+[href='#document-top'], [class^="badge-"] {
+  &:before {
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    content: ' ';
+    display: inline-block;
+    vertical-align: text-top;
+  }
 }
 
-
-[class^="fas-"] {
-  font-family: "Font Awesome 5 Free";
+.tip > p:first-child:before,
+.warning > p:first-child:before,
+.sidebar > p:first-child:before,
+.note > p:first-child:before {
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  content: ' ';
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 2px;
 }
 
-[class^="fab-"] {
-  font-family: "Font Awesome 5 Brands";
+[href^=http], [href^=mailto], 
+[href^=git], [href^=tel], [href^=magnet] {
+  &:before {
+    margin-right: 2px;
+  }
+}
+
+[href='#document-top'] {
+  float: right;
+  &:before {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+#footer a:before { content: ""; }
+
+#footer a {
+  &:hover {
+    text-decoration: none;
+  }
+  &:after {
+    content: none;
+  }
 }
 
 code,

@@ -76,7 +76,7 @@
 }
 
 
-.mix-titled-block (@bg-color, @fg-color, @border-color, @icon){
+.mix-titled-block (@bg-color, @fg-color, @border-color){
   .mix-box(@bg-color, @fg-color, @border-color);
   font-size: 95%;
   & > p {
@@ -84,7 +84,6 @@
     &:first-child {
       font-weight: @bold-weight;
       color: @fg-color;
-      .mix-symbol(@icon, @fg-color)
     }
   }
   pre, code {
@@ -119,23 +118,7 @@
 }
 
 .mix-hyphens (@val) {
-	-webkit-hyphens: @val; 
-	-moz-hyphens: @val; 
-	-ms-hyphens: @val; 
-	-o-hyphens: @val; 
 	hyphens: @val;
-}
-
-.mix-link-icon (@icon, @space:"\202F") {
-  &:before {
-    background: url("#fa-@{icon}") no repeat;
-  }
-}
-
-.mix-brand-link-icon (@icon, @space:"\202F") {
-  &:before {
-    background: url("#fa-@{icon}") no repeat;
-  }
 }
 
 .mix-responsive {

@@ -1,50 +1,157 @@
 
-;;; hastystyles.fa.svg
+"./config.json" fread from-json :config
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 "Merging FA sprites..." notice!
-
-"<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"display: none;\">
-</svg>" :svg-container
-
-svg-container from-xml :svg
 
 "./src/icons/solid.svg" fread from-xml "symbol" xqueryall :solid-symbols
 "./src/icons/brands.svg" fread from-xml "symbol" xqueryall :brands-symbols
 
-solid-symbols size :n-solid
-brands-symbols size :n-brands
-
-"Solid icons: $# - Brand icons: $#" (n-solid n-brands) =% notice!
-
 solid-symbols brands-symbols concat :fa-symbols
 
-fa-symbols size :n-symbols
 
-"Total icons: $#" (n-symbols) =% notice!
 
-svg fa-symbols %children @svg
-
-svg to-xml "./dist/hastystyles.fa.svg" fwrite
-
-"Generated: hastystyles.fa.svg" notice!
-
-;;; hastystyles.fa.css
-
-"Generating CSS rules..." notice!
-
-".fa-$1 { background: url('#fa-$1') no-repeat }" :rule
-
+{} :fa-icons
 
 fa-symbols 
     (
         :icon
+        icon 'svg %tag @icon
         *icon/attributes/id :id
-        rule (id) =%
-    ) map
-    "\n" join "./dist/hastystyles.fa.css" fwrite
+        *icon/attributes :attributes
+        attributes "http://www.w3.org/2000/svg" %xmlns @attributes
+        attributes 'id ddel @attributes
+        icon attributes %attributes @icon
+        fa-icons icon id dset @fa-icons
+    ) 
+foreach
 
-"Generated: hastystyles.fa.css" notice!
+fa-icons dkeys size :n-symbols
+
+"Total icons: $#" (n-symbols) =% notice!
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(
+    symbol datauri
+    (dict:xml-element :icon ==> str :result)
+    (
+        icon to-xml :xml
+        ; Encode
+        xml 
+        "\""  "'" replace 
+        "%" "%25" replace 
+        "#" "%23" replace 
+        "{" "%7B" replace 
+        "}" "%7D" replace 
+        "<" "%3C" replace 
+        ">" "%3E" replace 
+        "\s+" " " replace 
+        @xml
+        "data:image/svg+xml,$#" (xml) =% @result
+    )
+) ::
+
+(
+    symbol set-icon-fill
+    (dict:xml-element :icon str :fill ==> dict:xml-element :result)
+    (
+        icon /children first :path
+        *path/attributes :attributes
+        attributes fill %fill @attributes
+        path attributes %attributes @path
+        icon (path) => %children @result 
+    )   
+) ::
+
+(
+    symbol icon-content-rule
+    (str :id ==> str :result)
+    (
+        fa-icons id dget :icon
+        icon datauri :uri
+        ".fa-$#:before { background-image: url(\"$#\") }" (id uri) =% @result
+    )
+) ::
+
+(
+    symbol icon-link-rule
+    (str :id ==> str :result)
+    (
+        fa-icons id dget :icon
+        *config/colors/link :fill
+        icon fill set-icon-fill @icon
+        *config/links id dget :matcher
+        icon datauri :uri
+        "a[href$#]:before { background-image: url(\"$#\") }" (matcher uri) =% @result
+    )
+) ::
+
+(
+    symbol icon-note-rule
+    (str :id ==> str :result)
+    (
+        fa-icons id dget :icon
+        *config/notes id dget :type
+        *config/colors type dget :fill
+        icon fill set-icon-fill @icon
+        icon datauri :uri
+        ".$# > p:first-child:before { background-image: url(\"$#\") }" (type uri) =% @result
+    )
+) ::
+
+(
+    symbol icon-badge-rule
+    (str :id ==> str :result)
+    (
+        fa-icons id dget :icon
+        *config/badges id dget :badge
+        *badge/name :name
+        *badge/color :fill
+        icon fill set-icon-fill @icon
+        icon datauri :uri
+        ".badge-$#:before { background-image: url(\"$#\") }" (name uri) =% @result
+    )
+) ::
+
+;;; hastystyles.icons.css
+
+fa-icons dkeys 'icon-content-rule map "\n" join :icons-css
+
+icons-css "./dist/hastystyles.icons.css" fwrite
+
+"Generated: hastystyles.icons.css" notice!
+
+;;; hastystyles.links.css
+
+*config/links :links
+
+links dkeys 'icon-link-rule map "\n" join :links-css
+
+links-css "./dist/hastystyles.links.css" fwrite
+
+"Generated: hastystyles.links.css" notice!
+
+;;; hastystyles.notes.css
+
+*config/notes :notes
+
+notes dkeys 'icon-note-rule map "\n" join :notes-css
+
+notes-css "./dist/hastystyles.notes.css" fwrite
+
+"Generated: hastystyles.notes.css" notice!
+
+;;; hastystyles.badges.css
+
+*config/badges :badges
+
+badges dkeys 'icon-badge-rule map "\n" join :badges-css
+
+badges-css "./dist/hastystyles.badges.css" fwrite
+
+"Generated: hastystyles.badges.css" notice!
 
 ;;; hastystyles.css
 
