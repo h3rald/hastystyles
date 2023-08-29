@@ -115,46 +115,48 @@ fa-icons dkeys size :n-symbols
     )
 ) ::
 
+(
+    symbol generate-css
+    (str :css str :name ==>)
+    (
+        css "./dist/hastystyles.$#.css" (name) =% fwrite
+        "Generated: hastystyles.$#.css" (name) =% notice!
+    )
+) ::
+
 ;;; hastystyles.icons.css
 
 fa-icons dkeys 'icon-content-rule map "\n" join :icons-css
-
-icons-css "./dist/hastystyles.icons.css" fwrite
-
-"Generated: hastystyles.icons.css" notice!
+icons-css "icons" generate-css
 
 ;;; hastystyles.links.css
 
 *config/links :links
-
 links dkeys 'icon-link-rule map "\n" join :links-css
-
-links-css "./dist/hastystyles.links.css" fwrite
-
-"Generated: hastystyles.links.css" notice!
+links-css "links" generate-css
 
 ;;; hastystyles.notes.css
 
 *config/notes :notes
-
 notes dkeys 'icon-note-rule map "\n" join :notes-css
-
-notes-css "./dist/hastystyles.notes.css" fwrite
-
-"Generated: hastystyles.notes.css" notice!
+notes-css "notes" generate-css
 
 ;;; hastystyles.badges.css
 
 *config/badges :badges
-
 badges dkeys 'icon-badge-rule map "\n" join :badges-css
-
-badges-css "./dist/hastystyles.badges.css" fwrite
-
-"Generated: hastystyles.badges.css" notice!
+badges-css "badges" generate-css
 
 ;;; hastystyles.css
 
 !"lessc ./src/styles/hastystyles.less ./dist/hastystyles.css"
-
 "Generated: hastystyles.css" notice!
+
+;;; HastyStyles_TestDocument.htm
+
+!"hastyscribe ./test/HastyStyles_TestDocument.md --noembed --output-file=./dist/HastyStyles_TestDocument.htm"
+
+;;; Copy images
+
+"./test/images/hastyscribe.png" "./dist/images/hastyscribe.png" cp
+"./src/images/hastyscribe.svg" "./dist/hastyscribe.svg" cp

@@ -21,6 +21,26 @@
             "name": "heart",
             "color": "#CC3300"
         },
+        "wrench": {
+            "name": "fixme",
+            "color": "#CC3300"
+        },
+        "stopwatch": {
+            "name": "urgent",
+            "color": "#CC3300"
+        },
+        "clipboard-check": {
+            "name": "todo",
+            "color": "#CC3300"
+        },
+        "shield-halved": {
+            "name": "verify",
+            "color": "#CC3300"
+        },
+        "timeline": {
+            "name": "deadline",
+            "color": "#CC3300"
+        },
         "square": {
             "name": "square",
             "color": "#CC3300"
@@ -28,6 +48,14 @@
         "square-check": {
             "name": "check",
             "color": "#00CC33"
+        },
+        "comments": {
+            "name": "comment",
+            "color": "#00CC33"
+        },
+        "folder": {
+            "name": "folder",
+            "color": "#F5B800"
         },
         "lock": {
             "name": "lock",
@@ -53,13 +81,37 @@
             "name": "date",
             "color": "#0F4BFF"
         },
+        "circle-radiation": {
+            "name": "toxic",
+            "color": "#000000"
+        },
+        "network-wired": {
+            "name": "network",
+            "color": "#0F4BFF"
+        },
+        "upload": {
+            "name": "upload",
+            "color": "#0F4BFF"
+        },
+        "download": {
+            "name": "download",
+            "color": "#0F4BFF"
+        },
+        "address-card": {
+            "name": "address",
+            "color": "#0F4BFF"
+        },
+        "sitemap": {
+            "name": "org",
+            "color": "#0F4BFF"
+        },
         "clock": {
             "name": "time",
             "color": "#0F4BFF"
         },
         "paperclip": {
             "name": "attachment",
-            "color": "#333333"
+            "color": "#0F4BFF"
         },
         "location-dot": {
             "name": "geo",
@@ -73,149 +125,17 @@
             "name": "question",
             "color": "#0F4BFF"
         },
-        "phone": {
-            "name": "phone",
-            "color": "#333333"
-        },
-        "barcode": {
-            "name": "barcode",
-            "color": "#333333"
-        },
-        "envelope": {
-            "name": "email",
-            "color": "#333333"
-        },
-        "fax": {
-            "name": "fax",
-            "color": "#333333"
-        },
-        "print": {
-            "name": "print",
-            "color": "#333333"
-        },
-        "usb": {
-            "name": "usb",
-            "color": "#333333"
-        },
-        "globe": {
-            "name": "website",
-            "color": "#333333"
-        },
-        "desktop": {
-            "name": "desktop",
-            "color": "#333333"
-        },
-        "laptop": {
-            "name": "laptop",
-            "color": "#333333"
-        },
-        "mobile": {
-            "name": "mobile",
-            "color": "#333333"
-        },
-        "tablet": {
-            "name": "tablet",
-            "color": "#333333"
-        },
         "square-rss": {
             "name": "rss",
             "color": "#FF6600"
         },
         "toggle-on": {
             "name": "toggle-on",
-            "color": "#333333"
+            "color": "#00CC33"
         },
         "toggle-off": {
             "name": "toggle-off",
-            "color": "#333333"
-        },
-        "btc": {
-            "name": "btc",
-            "color": "#333333"
-        },
-        "euro-sign": {
-            "name": "eur",
-            "color": "#333333"
-        },
-        "dollar-sign": {
-            "name": "usd",
-            "color": "#333333"
-        },
-        "sterling-sign": {
-            "name": "gbp",
-            "color": "#333333"
-        },
-        "yen-sign": {
-            "name": "jpy",
-            "color": "#333333"
-        },
-        "rupee-sign": {
-            "name": "inr",
-            "color": "#333333"
-        },
-        "won-sign": {
-            "name": "krw",
-            "color": "#333333"
-        },
-        "ruble-sign": {
-            "name": "rub",
-            "color": "#333333"
-        },
-        "lira-sign": {
-            "name": "try",
-            "color": "#333333"
-        },
-        "cc-visa": {
-            "name": "visa",
-            "color": "#333333"
-        },
-        "cc-stripe": {
-            "name": "stripe",
-            "color": "#333333"
-        },
-        "cc-paypal": {
-            "name": "paypal",
-            "color": "#333333"
-        },
-        "cc-mastercard": {
-            "name": "mastercard",
-            "color": "#333333"
-        },
-        "cc-jcb": {
-            "name": "jcb",
-            "color": "#333333"
-        },
-        "cc-amex": {
-            "name": "amex",
-            "color": "#333333"
-        },
-        "cc-discover": {
-            "name": "discover",
-            "color": "#333333"
-        },
-        "cc-diners-club": {
-            "name": "diners",
-            "color": "#333333"
-        },
-        "cc-apple-pay": {
-            "name": "apple-pay",
-            "color": "#333333"
-        },
-        "cc-amazon-pay": {
-            "name": "amazon-pay",
-            "color": "#333333"
-        },
-        "copyright": {
-            "name": "copy",
-            "color": "#333333"
-        },
-        "registered": {
-            "name": "reg",
-            "color": "#333333"
-        },
-        "trademark": {
-            "name": "tm",
-            "color": "#333333"
+            "color": "#CC3300"
         },
         "flag": {
             "name": "flag",
@@ -305,14 +225,6 @@
             "name": "bluetooth",
             "color": "#0F4BFF"
         },
-        "wifi": {
-            "name": "wifi",
-            "color": "#333333"
-        },
-        "signal": {
-            "name": "signal",
-            "color": "#333333"
-        },
         "lightbulb": {
             "name": "idea",
             "color": "#F5B800"
@@ -327,7 +239,63 @@
         },
         "chrome": {
             "name": "chrome",
-            "color": "#F5B800"
+            "color": "#00CC33"
+        },
+        "debian": {
+            "name": "debian",
+            "color": "#A80030"
+        },
+        "fedora": {
+            "name": "fedora",
+            "color": "#31548F"
+        },
+        "centos": {
+            "name": "centos",
+            "color": "#A14F8C"
+        },
+        "suse": {
+            "name": "suse",
+            "color": "#30BA78"
+        },
+        "ubuntu": {
+            "name": "ubuntu",
+            "color": "#E95420"
+        },
+        "redhat": {
+            "name": "redhat",
+            "color": "#EE0000"
+        },
+        "rust": {
+            "name": "rust",
+            "color": "#000000"
+        },
+        "markdown": {
+            "name": "markdown",
+            "color": "#000000"
+        },
+        "react": {
+            "name": "react",
+            "color": "#149ECA"
+        },
+        "vuejs": {
+            "name": "vue",
+            "color": "#42D392"
+        },
+        "code": {
+            "name": "code",
+            "color": "#333333"
+        },
+        "angular": {
+            "name": "angular",
+            "color": "#DD0031"
+        },
+        "raspberry-pi": {
+            "name": "rpi",
+            "color": "#C81C53"
+        },
+        "golang": {
+            "name": "go",
+            "color": "#CCCCCC"
         },
         "firefox": {
             "name": "firefox",
@@ -336,10 +304,6 @@
         "internet-explorer": {
             "name": "ie",
             "color": "#0F4BFF"
-        },
-        "circle": {
-            "name": "circle",
-            "color": "#333333"
         },
         "edge": {
             "name": "edge",
@@ -356,43 +320,51 @@
     },
     "links": {
         "angles-up": "='#document-top'",
+        "file-zipper": "$='.zip'",
+        "file-pdf": "$='.pdf'",
         "globe": "^=http",
         "envelope": "^=mailto",
         "magnet": "^=magnet",
         "phone": "^=tel",
         "git": "^=git",
         "amazon": "*='amazon.'",
-        "bitbucket": "*='bitbucket.'",
+        "bitbucket": "*='bitbucket.com'",
         "blogger": "*='blogger.'",
-        "deviantart": "*='deviantart.'",
-        "dropbox": "*='dropbox.'",
-        "digg": "*='digg.'",
-        "linkedin": "*='linkedin.'",
-        "facebook": "*='facebook.'",
-        "flickr": "*='flickr.'",
-        "foursquare": "*='foursquare.'",
-        "github": "*='github.'",
-        "gitlab": "*='gitlab.'",
+        "deviantart": "*='deviantart.com'",
+        "dropbox": "*='dropbox.com'",
+        "digg": "*='digg.chrome'",
+        "linkedin": "*='linkedin.com'",
+        "facebook": "*='facebook.com'",
+        "flickr": "*='flickr.com'",
+        "slack": "*='slack.com'",
+        "discord": "*='discordapp.com'",
+        "foursquare": "*='foursquare.com'",
+        "github": "*='github.com'",
+        "gitlab": "*='gitlab.com'",
         "google": "*='google.'",
-        "hacker-news": "*='news.ycombinator.'",
+        "hacker-news": "*='news.ycombinator.com'",
         "google-plus": "*='plus.google.'",
-        "imdb": "*='imdb.'",
-        "instagram": "*='instagram.'",
-        "jsfiddle": "*='jsfiddle.'",
-        "kickstarter": "*='kickstarter.'",
-        "medium": "*='medium.'",
+        "imdb": "*='imdb.com'",
+        "instagram": "*='instagram.com'",
+        "jsfiddle": "*='jsfiddle.com'",
+        "kickstarter": "*='kickstarter.com'",
+        "medium": "*='medium.com'",
+        "codepen": "*='codepen.com'",
+        "etsy": "*='etsy.com'",
+        "mastodon": "*='mastodon.'",
+        "stack-exchange": "*='stack-exchange.com'",
         "npm": "*='npmjs.'",
-        "pinterest": "*='pinterest.'",
-        "quora": "*='quora.'",
-        "reddit": "*='reddit.'",
-        "stack-overflow": "*='stackoverflow.'",
-        "trello": "*='trello.'",
-        "tumblr": "*='tumblr.'",
-        "twitter": "*='twitter.'",
-        "vimeo": "*='vimeo.'",
-        "wikipedia-w": "*='wikipedia.'",
+        "pinterest": "*='pinterest.com'",
+        "quora": "*='quora.com'",
+        "reddit": "*='reddit.com'",
+        "stack-overflow": "*='stackoverflow.com'",
+        "trello": "*='trello.com'",
+        "tumblr": "*='tumblr.com'",
+        "twitter": "*='twitter.com'",
+        "vimeo": "*='vimeo.com'",
+        "wikipedia-w": "*='wikipedia.com'",
         "wordpress": "*='wordpress.'",
         "yahoo": "*='yahoo.'",
-        "youtube": "*='youtube.'"
+        "youtube": "*='youtube.com'"
     }
 }

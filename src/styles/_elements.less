@@ -163,7 +163,7 @@ hr {
   }
 }
 
-#footer a:before { content: ""; }
+#footer a:before { background: none; }
 
 #footer a {
   &:hover {
@@ -285,27 +285,5 @@ a:visited {
 /* Checkboxes */
 
 li.github_checkbox {
-
   list-style-type: none;
-
-  input[type="checkbox"] {
-    width: 0;
-    height: 0;
-  }
-
-  input[type="checkbox"]::after {
-    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
-    content: '\f0c8';
-    top: -14px;
-    left: -14px;
-    position: relative;
-    color: @gray-a;
-  }
-
-  input[type="checkbox"]:checked::after {
-    content: '\f14a';
-    color: @bright-green;
-  }
-
-
 }
