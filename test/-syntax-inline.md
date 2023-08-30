@@ -69,11 +69,11 @@ Examples:
 
 Badges are shorthands for [Icons](#Icons) formatted with different colors. To add a _badge_ to some inline text, use the corresponding class among those listed in the following table. For example, the following code:
 
-    [Genoa, Italy](class:geo)
+    [Genoa, Italy](class:badge-geo)
 
 produces the following result:
 
-[Genoa, Italy](class:geo)
+[Genoa, Italy](class:badge-geo)
 
 {{hs}} currently supports the following badges:
 
