@@ -4,10 +4,6 @@
     width: 700px;
   }
 
-  @prince-pdf {
-    prince-pdf-page-mode: show-bookmarks;
-  }
-
 
   /* Table of Contents */
 
@@ -104,7 +100,6 @@
 
   h1 {
     margin-bottom: 50px;
-    string-set: title content();
     border-bottom: 0;
   }
 
@@ -117,45 +112,16 @@
 
   h2, h3, h4, h5, h6 {
     page-break-after: avoid;
-    prince-bookmark-state: closed;
-  }
-
-  #footer {
-    // For some reason the HastyScribe font is not displayed correctly.
-    display: none; 
-  }
-
-  @page:first {
-    @top-center {
-      content: "";
-    }
   }
 
   @page {
 	  size: A4;
 	  margin: 50pt 30pt 50pt 30pt;
     padding-top: 20pt;
-    @top-center {
-      font-family: 'Arial';
-      font-size: 0.8em;
-      content: string(title);
-    }
+    @bottom-right {
+		  content: counter(page); 
+		  font-family: 'sans-serif';
+		  font-size: 0.8em;
+	  }
   } 
-
-  @page:left {
-	  @bottom-left {
-		  content: counter(page); 
-		  font-family: "Arial", "Sans Serif";
-		  font-size: 0.8em;
-	  }
-  }
-  @page:right {
-	  @bottom-right {
-		  content: counter(page); 
-		  font-family: "Arial", "Sans Serif";
-		  font-size: 0.8em;
-	  }
-  }
-
-
 }

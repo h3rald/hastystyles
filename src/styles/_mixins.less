@@ -1,9 +1,5 @@
 .mix-box (@bg-color, @fg-color, @border-color) {
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
   background-clip :padding-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   margin: 10px auto;
   padding: 2px 4px 0 4px;
@@ -33,8 +29,6 @@
 }
 
 .mix-no-border-radius {
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 
@@ -45,11 +39,7 @@
   display: inline-block;
   width: auto;
   margin: 1px;
-  -webkit-border-radius:2px;
-  -moz-border-radius:2px;
   border-radius:2px;
-  -moz-background-clip:padding;
-  -webkit-background-clip:padding-box;
   background-clip:padding-box;
   text-shadow: 0 1px 0 rgba(255,255,255,0.8);
   box-shadow:0 1px 3px rgba(0,0,0,0.1);
@@ -59,8 +49,6 @@
   color: @color;
   &:before {
     .mix-inline-box(@bg-color, @color, @color);
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
     border-radius:4px;
     padding: 1px 1px 3px 1px;
     line-height: 95%;
@@ -87,7 +75,6 @@
     }
   }
   pre, code {
-    font-size: 400;  
     color: darken(@fg-color, 10%);
   }
   a {
@@ -125,7 +112,6 @@
   @media screen and (max-width: 639px) {
     overflow-y: hidden;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     td {
       white-space: nowrap;
     }
